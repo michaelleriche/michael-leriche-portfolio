@@ -78,6 +78,9 @@ i:hover {
   h1 {
     font-size: 3.5rem;
   }
+  .blinking-cursor {
+    font-size: 3.5rem;
+  }
   .box {
     margin-top: 75px;
     width: 250px;
@@ -87,6 +90,9 @@ i:hover {
 }
 @media (max-width: 480px) {
   h1 {
+    font-size: 2.5rem;
+  }
+  .blinking-cursor {
     font-size: 2.5rem;
   }
   h2 {
@@ -105,6 +111,9 @@ i:hover {
   h1 {
     font-size: 1.7rem;
     margin-top: 10px;
+  }
+  .blinking-cursor {
+    font-size: 1.7rem;
   }
   h2 {
     font-size: 1rem;
