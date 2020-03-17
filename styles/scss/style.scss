@@ -32,7 +32,6 @@ h3 {
 
 }
 .box1 {
-    // background-color:#FF0000;
     background-color: #48acf0;
     transform: rotate(45deg);
     transition: 4s;
@@ -40,9 +39,7 @@ h3 {
 .box2 {
     background-color: #6665dd;
     transform: rotate(45deg);
-
 }
-
 .box1:hover {
     transform: rotate(405deg);
 }
@@ -62,18 +59,13 @@ i {
   margin: 0 15px;
   transition: 0.8s;
 }
-
 a {
   color: black;
- 
 }
-
-
 i:hover {
   scale: 1.5;
   transform: rotate(360deg);
 }
-
 @media (max-width: 730px) {
   h1 {
     font-size: 3.5rem;
@@ -105,7 +97,7 @@ i:hover {
     margin-top: 60px;
     width: 200px;
     height: 200px;
-}
+  }
 }
 @media (max-width: 380px) {
   h1 {
