@@ -1,0 +1,56 @@
+input,
+button {
+    font-size: 1.4rem;
+    font-family: $bodyFont;
+    border: none;
+    border-bottom: 2px solid $primaryColour;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+input {
+    width: 100%;
+    box-shadow: inset -5px 5px 5px -7px rgba(0,0,0,0.75);
+}
+button {
+    text-transform: uppercase;
+    background-color: $primaryColour;
+    padding: 15px 50px;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: white;
+}
+button:hover {
+    box-shadow: 5px 5px black;
+}
+button:active {
+    box-shadow: none;
+    color: black;
+}
+textarea {
+    font-size: 1.4rem;
+    font-family: $bodyFont;
+    border: none;
+    box-shadow: inset -5px 5px 5px -7px rgba(0,0,0,0.75);
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-bottom: 2px solid $primaryColour;
+    border-radius: 5px;
+
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+
+}

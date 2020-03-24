@@ -1,7 +1,7 @@
 .blinking-cursor {
     font-weight: 100;
     font-size: 5rem;
-    color: #2E3D48;
+    color: white;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
@@ -13,16 +13,16 @@
       color: transparent;
     }
     50% {
-      color: black;
+      color: white;
     }
   }
   
-  @-moz-keyframes blink {
+  @-moz-keyframes "blink" {
     from, to {
       color: transparent;
     }
     50% {
-      color: black;
+      color: white;
     }
   }
   
@@ -31,7 +31,7 @@
       color: transparent;
     }
     50% {
-      color: black;
+      color: white;
     }
   }
   
@@ -40,7 +40,7 @@
       color: transparent;
     }
     50% {
-      color: black;
+      color: white;
     }
   }
   
@@ -49,7 +49,57 @@
       color: transparent;
     }
     50% {
-      color: black;
+      color: white;
     }
   }
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+  .toggle .line1,
+  .toggle .line2,
+  .toggle .line3,
+  .toggle .line4,
+  .toggle .line5{
+    transform: rotate(135deg);
+  }
+  
+  
+
+
+  @keyframes fade-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: none;
+    }
+    50% {
+      opacity: .8;
+      color: $secondaryColour;
+      text-shadow: 0 10px $accentThreeColour, 0px 20px $accentColour, 0px 30px $accentTwoColour, 0px 40px $primaryColour;
+      transform: scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+ 
+  
  

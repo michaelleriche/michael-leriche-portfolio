@@ -5,31 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael le Riche | Home</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,800,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bc4273dc03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="wrapper">
-        <h1>Michael le Riche<span class="blinking-cursor">_</span></h1>
-        <h2>Web Dev</h2>
+    <header class="header"> 
+        <nav class="wrapper">
+            <ul class="nav-links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+            </div>
+        </nav>
+        <div class="wrapper hero-image">
+            <div class="hero-h3">
+                <h3>Hello, I'm</h3>
+            </div>
+            <h1>Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span><span class="blinking-cursor">_</span></h1>
+            <!-- <div class="half-circle"></div> -->
+            <!-- <h2>Web Dev</h2> -->
+        </div>
+        <!-- <div class="wrapper box-container">
+            <div class="box box1">
+
+                <div class="box box2"></div>
+            </div> -->
+            <div class="header-down-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="wrapper box-container">
-            <div class="box box1"></div>
-            <div class="box box2"></div>
-        </div>
-        
-        
-        <div class="info wrapper">
-            <h3>Portfolio coming soon</h3>
-            <div class="social-icons">
-                <a href="http://www.github.com/michaelleriche" target="_blank" ><i class="fab fa-github"></i></a>
-                <a href="mailto:mikeleriche@gmail.com"><i class="icon far fa-envelope" tabindex="0" ></i></a>
-                <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a>   
+        <section class="about-me wrapper" id="about-me">
+            <div class="about-me-img">
+                <img src="./assets/headshot-crop.png"  title="michael le riche headshot" alt="michael le riche headshot">
             </div>    
-        </div>    
+            <div class="about-me-text">
+                <h2>Hi, I'm Michael...</h2>
+                <p> I’m a synthesizer obsessed front end web developer with a passion for clean and concise code. I have a keen eye for design and a dedication to the rule that simpler is usually better. With my past experience of being a musician I've become very good at being self motivated, managing my time wisely, and multi-tasking. I got my start in web-development in the mid 2000's when I was uploading my first compositions to MySpace and using it as a resource for meeting other likeminded performers to book shows and tour with. I care deeply about building engaging, accessible, and responsive websites. When I'm not coding, you can find me running, building modular synthesizers, or in the kitchen trying a new recipe. </p>
+            </div>
+        </section>
+        <section class="portfolio wrapper" id="portfolio">
+            <h2>My Work</h2>
+            <ul class="carousel" data-target="carousel">
+                <li class="portfolio-item card card1" data-target="card">
+                    <div>
+                        <img src="./assets/laptop-funguy.png" class="laptop" title="Is this fungi a Fun Guy App" alt="Is this fungi a Fun Guy App">
+                        <div class="portfolio-icons">
+                            <i class="devicon-react-original"></i>
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-github-plain"></i>
+                            <img src="./assets/firebase.svg" class="firebase-p-icon" alt=""> 
+                        </div>   
+                    </div>
+                    <div class="portfolio-text1">
+                        <h3>Is this fungi a Fun Guy?</h3>
+                        <p class="port-desc">Is this fungi a Fun Guy was born out of my fascination with all things fungus. It is a web-based app which allows you guess which mushroom is toxic and which is edible. I used Firebase to create a database to hold the high scores so top players can show off their knowledge. Do YOU know your way around the fungi kingdom?</p> 
+                    </div>
+                </li>
+                <li class="portfolio-item card card2" data-target="card">
+                    <div class="portfolio-text2">
+                        <h3>Movie Cat</h3>
+                        <p class="port-desc">A cat themed movie app, Movie Cat is a website which allows you to discover movies from all over the world, from many different generations of filmmakers. Pulling data from themoviedb.org database, the user can select country, decade, genre, and rating to find their new favourite film to love, or even their new favourite film to hate! See if you can find the easter egg. Pair programmed by Alison Song and I.</p>  
+                    </div>
+                    <div>
+                        <img src="./assets/laptop-moviecat.png" title="Movie Cat App" alt="Movie Cat App">
+                        <div class="portfolio-icons">
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-github-plain"></i>
+                            <i class="devicon-sass-original"></i>
+                        </div>  
+                    </div>
+                </li>
+                <li class="portfolio-item card card1" data-target="card">
+                    <div>
+                        <img src="./assets/laptop-larry-shine.png" title="Larry David's Soundboard" alt="Larry David's Soundboard">
+                        <div class="portfolio-icons">
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-github-plain"></i>
+                            <i class="devicon-sass-original"></i>
+                        </div>  
+                    </div>
+                    <div class="portfolio-text1">
+                        <h3>Larry David's Pretty, Pretty, Pretty Good Soundboard</h3>
+                        <p class="port-desc">I've always loved Larry David. Whether he was writing on Seinfeld or starring in Curb, his dry wit and lack of a personal filter has always left me in stitches. Now I've taken that fandom to the next level and created a soundboard which logs some of my favourite audio clips and sayings from episodes of Curb Your Enthusiam. Pretty, pretty, pretty good!</p>  
+                    </div>
+                </li>
+                <li class="portfolio-item card card2" data-target="card">
+                    <div class="portfolio-text2">
+                        <h3>Client PSD Conversion</h3>
+                        <p class="port-desc">Harper is a multi-page PSD conversion of a website for a blogger and influencer. The website is fully responsive on all screen sizes and fully accessible. Crafted with an intense dedication to detail, the client's PSD was re-created to a tee.</p>   
+                    </div>
+                    <div>
+                        <img src="./assets/laptop-harper.png" title="Client PSD conversion" alt="Client PSD conversion">
+                        <div class="portfolio-icons">
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-github-plain"></i>
+                            <i class="devicon-sass-original"></i>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+                <button data-action="slideLeft">&#8592;</button>
+                <button data-action="slideRight">&#8594;</button>
+            </div>    
+        </section>
+        <section class="skills wrapper" id="skills">
+            <h2>Skills</h2>
+            <div class="skill-icons">
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-github-plain"></i>
+                <i class="devicon-visualstudio-plain"></i>
+                <i class="devicon-git-plain"></i>
+                <img src="./assets/firebase.svg" alt="">    
+                <i class="devicon-jquery-plain"></i>
+                <i class="devicon-sass-original"></i>
+            </div>  
+        </section>
+        <section class="contact-form wrapper" id="contact">
+            <h2>Contact Me</h2>
+            <form action="">
+                <fieldset>
+                    <div class="form-half">
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="name" placeholder="Name" name="name" id="name">
+                        <label for="email" class="visuallyHidden">Email</label>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                    <label for="text" class="visuallyHidden">Let me know what I can do for you</label>
+                    <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you."></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+         
     </main>
+    <footer class="wrapper">
+        <div class="social-icons">
+            <a href="http://www.github.com/michaelleriche" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="mailto:mikeleriche@gmail.com"><i class="icon far fa-envelope" tabindex="0" ></i></a>
+            <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a>   
+        </div>    
+    </footer>
     
+    <script src="app.js"></script>
 </body>
 </html>
