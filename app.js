@@ -12,7 +12,6 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.4}s`;
             }
         });
-        //burg animate
         burger.classList.toggle('toggle');
     });
         
@@ -20,29 +19,66 @@ const navSlide = () => {
 }
 navSlide();
 
-const carousel = document.querySelector("[data-target='carousel']");
-const card = carousel.querySelector("[data-target='card']");
-const leftButton = document.querySelector("[data-action='slideLeft']");
-const rightButton = document.querySelector("[data-action='slideRight']");
-const carouselWidth = carousel.offsetWidth;
-const cardStyle = card.currentStyle || window.getComputedStyle(card)
-const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
-const cardCount = carousel.querySelectorAll("[data-target='card']").length;
-let offset = 0;
-const maxX = -((cardCount / 3) * carouselWidth + 
-               (cardMarginRight * (cardCount / 3)) - 
-               carouselWidth - cardMarginRight);
-leftButton.addEventListener("click", function() {
-  if (offset !== 0) {
-    offset += carouselWidth + cardMarginRight;
-    carousel.style.transform = `translateX(${offset}px)`;
-    }
-})
-  
-rightButton.addEventListener("click", function() {
-  if (offset !== maxX) {
-    offset -= carouselWidth + cardMarginRight;
-    carousel.style.transform = `translateX(${offset}px)`;
-  }
-})
+$(document).ready(function () {
+    $("#first").addClass('scroll-item-active');
+    var main = main = $('#scroll');
+    $('.scroll-item').click(function (event) {
 
+        event.preventDefault();
+        var trgt = $(this).attr('id') + "1";
+        target_offset = $('#' + trgt).offset(),
+        target_top = target_offset.top;
+        $('html, body').animate({
+            scrollTop: target_top
+        }, 500);
+        main.children().removeClass('scroll-item-active');
+
+        $(this).addClass('scroll-item-active');
+
+    });
+
+    $(window).scroll(function (event) {
+        if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $("#first").addClass('scroll-item-active');
+            $("#second").removeClass('scroll-item-active');
+            $("#third").removeClass('scroll-item-active');
+            $("#fourth").removeClass('scroll-item-active');
+            $("#fifth").removeClass('scroll-item-active');
+        }
+        if ($("#second1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $("#second").addClass('scroll-item-active');
+            $("#first").removeClass('scroll-item-active');
+            $("#third").removeClass('scroll-item-active');
+            $("#fourth").removeClass('scroll-item-active');
+            $("#fifth").removeClass('scroll-item-active');
+
+            
+        }
+        if ($("#third1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $("#third").addClass('scroll-item-active');
+           $("#first").removeClass('scroll-item-active');
+            $("#second").removeClass('scroll-item-active');
+            $("#fourth").removeClass('scroll-item-active');
+            $("#fifth").removeClass('scroll-item-active');
+
+        }
+         if ($("#fourth1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $("#fourth").addClass('scroll-item-active');
+           $("#first").removeClass('scroll-item-active');
+            $("#second").removeClass('scroll-item-active');
+            $("#third").removeClass('scroll-item-active');
+            $("#fifth").removeClass('scroll-item-active');
+
+        }
+        if ($("#fifth1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $("#fifth").addClass('scroll-item-active');
+           $("#first").removeClass('scroll-item-active');
+            $("#second").removeClass('scroll-item-active');
+            $("#third").removeClass('scroll-item-active');
+            $("#fourth").removeClass('scroll-item-active');
+
+        }
+    });
+});
+
+AOS.init();

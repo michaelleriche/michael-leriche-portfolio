@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael le Riche | Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,800,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bc4273dc03.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <header class="header"> 
-        <nav class="wrapper">
+
+    
+<header class="header-background"> 
+    <div id="first1"></div>
+    <div class="top-bar">
+        <nav>
             <ul class="nav-links">
-                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#about-me">About_Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" tabindex="0">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -28,61 +36,100 @@
                 <div class="line5"></div>
             </div>
         </nav>
-        <div class="wrapper hero-image">
-            <div class="hero-h3">
-                <h3>Hello, I'm</h3>
+    </div>
+                                            <!-- left side -->
+    <div class="header wrapper">
+        <div class="social-icons social-icons-header">
+            <div class="social-icon-circle">
+                <a href="http://www.github.com/michaelleriche" class="header3" target="_blank" ><i class="fab fa-github"></i></a>
             </div>
-            <h1>Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span><span class="blinking-cursor">_</span></h1>
-            <!-- <div class="half-circle"></div> -->
-            <!-- <h2>Web Dev</h2> -->
-        </div>
-        <!-- <div class="wrapper box-container">
-            <div class="box box1">
-
-                <div class="box box2"></div>
-            </div> -->
+            <div class="social-icon-circle">
+                <a href="mailto:mikeleriche@gmail.com" class="header1"><i class="icon far fa-envelope" tabindex="0" ></i></a>
+            </div>
+            <div class="social-icon-circle">
+                <a href="http://www.twitter.com/mlerichecodes" class="header5" target="_blank" ><i class="fab fa-twitter"></i></a>
+            </div>    
+            <div class="social-icon-circle">
+                <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" class="header4" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a> 
+            </div>         
+        </div>  
+        <!-- CENTER -->
+        <div class="header-center">
+            <div class="hero-image-text">
+                <h3 class="hero-h3">Hello, I'm</h3>
+                <h1>Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span><span class="blinking-cursor">_</span></h1>
+                <h2 class="header-h2"> < Web Developer /></h2>
+            </div>
             <div class="header-down-arrow">
                 <i class="fas fa-chevron-down"></i>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="about-me wrapper" id="about-me">
-            <div class="about-me-img">
+        <!-- RIGHT SIDE -->
+            <div id="scroll">
+                <div id="first" class="scroll-item">&nbsp;</div>
+                <div id="second" class="scroll-item">&nbsp;</div>
+                <div id="third" class="scroll-item">&nbsp;</div>
+                <div id="fourth" class="scroll-item">&nbsp;</div>
+                <div id="fifth" class="scroll-item">&nbsp;</div>
+            </div>
+    </div>
+</header>
+    
+    
+    
+<main>
+    <div id="second1"></div>
+    <section class="about-me container" id="about-me">
+            <div class="about-me-img" data-aos="fade-up-right">
                 <img src="./assets/headshot-crop.png"  title="michael le riche headshot" alt="michael le riche headshot">
             </div>    
-            <div class="about-me-text">
-                <h2>Hi, I'm Michael...</h2>
-                <p> I’m a synthesizer obsessed front end web developer with a passion for clean and concise code. I have a keen eye for design and a dedication to the rule that simpler is usually better. With my past experience of being a musician I've become very good at being self motivated, managing my time wisely, and multi-tasking. I got my start in web-development in the mid 2000's when I was uploading my first compositions to MySpace and using it as a resource for meeting other likeminded performers to book shows and tour with. I care deeply about building engaging, accessible, and responsive websites. When I'm not coding, you can find me running, building modular synthesizers, or in the kitchen trying a new recipe. </p>
+            <div class="about-me-text" data-aos="fade-up-left">
+                <h2>Hello, I'm Michael...</h2>
+                <p> I’m a synthesizer obsessed front end web developer with a passion for clean and concise code. I have a keen eye for design and a dedication to the rule that simpler is usually better. With my past experience of being a musician I've become very good at being self motivated, managing my time wisely, and multi-tasking. I got my start in web-development in the mid 2000's when I was uploading my first compositions to MySpace and using it as a resource for meeting other likeminded performers to book shows and tour with.</p>
+                <br>
+                <br>
+                <p>I care deeply about building <em>engaging</em>, <em>accessible</em>, and <em>responsive</em> websites. When I'm not coding, you can find me running, building modular synthesizers, or in the kitchen trying a new recipe. </p>
             </div>
         </section>
-        <section class="portfolio wrapper" id="portfolio">
-            <h2>My Work</h2>
-            <ul class="carousel" data-target="carousel">
-                <li class="portfolio-item card card1" data-target="card">
-                    <div>
+        <div id="third1"></div>
+        <section class="portfolio1 container" id="portfolio" data-aos="fade-up">
+            <h2>Recent Projects</h2>
+            
+            <ul class="carousel">
+                <li class="portfolio-item card1">
+                    <div data-aos="fade-up-right">
                         <img src="./assets/laptop-funguy.png" class="laptop" title="Is this fungi a Fun Guy App" alt="Is this fungi a Fun Guy App">
                         <div class="portfolio-icons">
                             <i class="devicon-react-original"></i>
+                            <i class="devicon-javascript-plain"></i>
                             <i class="devicon-html5-plain"></i>
                             <i class="devicon-css3-plain"></i>
                             <i class="devicon-github-plain"></i>
-                            <img src="./assets/firebase.svg" class="firebase-p-icon" alt=""> 
+                            <i class="fas fa-fire-alt"></i>
                         </div>   
                     </div>
-                    <div class="portfolio-text1">
+                    <div class="portfolio-text1" data-aos="fade-up-left">
                         <h3>Is this fungi a Fun Guy?</h3>
                         <p class="port-desc">Is this fungi a Fun Guy was born out of my fascination with all things fungus. It is a web-based app which allows you guess which mushroom is toxic and which is edible. I used Firebase to create a database to hold the high scores so top players can show off their knowledge. Do YOU know your way around the fungi kingdom?</p> 
+                        <div class="portfolio-button">
+                            <a href="https://github.com/michaelleriche/fungi-funguy" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/fungi-funguy" target="_blank"><button>See the code  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div>
                     </div>
                 </li>
-                <li class="portfolio-item card card2" data-target="card">
-                    <div class="portfolio-text2">
+                <li class="portfolio-item card2">
+                    <div class="portfolio-text2" data-aos="fade-up-right">
                         <h3>Movie Cat</h3>
                         <p class="port-desc">A cat themed movie app, Movie Cat is a website which allows you to discover movies from all over the world, from many different generations of filmmakers. Pulling data from themoviedb.org database, the user can select country, decade, genre, and rating to find their new favourite film to love, or even their new favourite film to hate! See if you can find the easter egg. Pair programmed by Alison Song and I.</p>  
+                        <div class="portfolio-button">
+                            <a href="https://github.com/michael-leriche-alice-song/movie-hunter-v2" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michael-leriche-alice-song/movie-hunter-v2" target="_blank"><button>See the code  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up-left">
                         <img src="./assets/laptop-moviecat.png" title="Movie Cat App" alt="Movie Cat App">
                         <div class="portfolio-icons">
+                            <i class="devicon-javascript-plain"></i>
                             <i class="devicon-html5-plain"></i>
                             <i class="devicon-css3-plain"></i>
                             <i class="devicon-github-plain"></i>
@@ -90,27 +137,36 @@
                         </div>  
                     </div>
                 </li>
-                <li class="portfolio-item card card1" data-target="card">
-                    <div>
+                <li class="portfolio-item card1">
+                    <div data-aos="fade-up-right">
                         <img src="./assets/laptop-larry-shine.png" title="Larry David's Soundboard" alt="Larry David's Soundboard">
                         <div class="portfolio-icons">
+                            <i class="devicon-javascript-plain"></i>
                             <i class="devicon-html5-plain"></i>
                             <i class="devicon-css3-plain"></i>
                             <i class="devicon-github-plain"></i>
                             <i class="devicon-sass-original"></i>
                         </div>  
                     </div>
-                    <div class="portfolio-text1">
+                    <div class="portfolio-text1" data-aos="fade-up-left">
                         <h3>Larry David's Pretty, Pretty, Pretty Good Soundboard</h3>
-                        <p class="port-desc">I've always loved Larry David. Whether he was writing on Seinfeld or starring in Curb, his dry wit and lack of a personal filter has always left me in stitches. Now I've taken that fandom to the next level and created a soundboard which logs some of my favourite audio clips and sayings from episodes of Curb Your Enthusiam. Pretty, pretty, pretty good!</p>  
+                        <p class="port-desc">I've always loved Larry David. Whether he was writing on Seinfeld or starring in Curb, his dry wit and lack of a personal filter has always left me in stitches. Now I've taken that fandom to the next level and created a soundboard which logs some of my favourite audio clips and sayings from episodes of Curb Your Enthusiam. Pretty, pretty, pretty good!</p> 
+                        <div class="portfolio-button">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>See the code <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div> 
                     </div>
                 </li>
-                <li class="portfolio-item card card2" data-target="card">
-                    <div class="portfolio-text2">
+                <li class="portfolio-item card2">
+                    <div class="portfolio-text2" data-aos="fade-up-right">
                         <h3>Client PSD Conversion</h3>
                         <p class="port-desc">Harper is a multi-page PSD conversion of a website for a blogger and influencer. The website is fully responsive on all screen sizes and fully accessible. Crafted with an intense dedication to detail, the client's PSD was re-created to a tee.</p>   
+                        <div class="portfolio-button">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-two" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-two" target="_blank"><button>See the code  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up-left">
                         <img src="./assets/laptop-harper.png" title="Client PSD conversion" alt="Client PSD conversion">
                         <div class="portfolio-icons">
                             <i class="devicon-html5-plain"></i>
@@ -121,53 +177,92 @@
                     </div>
                 </li>
             </ul>
-            <div class="button-wrapper">
-                <button data-action="slideLeft">&#8592;</button>
-                <button data-action="slideRight">&#8594;</button>
-            </div>    
+   
         </section>
-        <section class="skills wrapper" id="skills">
-            <h2>Skills</h2>
-            <div class="skill-icons">
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-css3-plain"></i>
-                <i class="devicon-react-original"></i>
-                <i class="devicon-javascript-plain"></i>
-                <i class="devicon-github-plain"></i>
-                <i class="devicon-visualstudio-plain"></i>
-                <i class="devicon-git-plain"></i>
-                <img src="./assets/firebase.svg" alt="">    
-                <i class="devicon-jquery-plain"></i>
-                <i class="devicon-sass-original"></i>
-            </div>  
-        </section>
-        <section class="contact-form wrapper" id="contact">
-            <h2>Contact Me</h2>
-            <form action="">
-                <fieldset>
-                    <div class="form-half">
-                        <label for="name" class="visuallyHidden">Name</label>
-                        <input type="name" placeholder="Name" name="name" id="name">
-                        <label for="email" class="visuallyHidden">Email</label>
-                        <input type="email" placeholder="Email" id="email">
+        
+        <section class="skills" id="skills">
+            <div id="fourth1"></div>
+            <div class="container">
+                <h2 data-aos="fade-up">Skills</h2>
+                <div class="skill-icons">
+                    <div class="icon-text colour-one" data-aos="fade-up-right">
+                        <i class="devicon-html5-plain"></i>
+                        <p class="skill-p-tag">HTML5</p>
                     </div>
-                    <label for="text" class="visuallyHidden">Let me know what I can do for you</label>
-                    <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you."></textarea>
-                </fieldset>
-                <button type="submit">Submit</button>
-            </form>
+                    <div class="icon-text colour-two" data-aos="fade-up-right">
+                        <i class="devicon-css3-plain"></i>
+                        <p class="skill-p-tag">CSS3</p>
+                    </div>
+                    <div class="icon-text colour-three" data-aos="fade-up-right">
+                        <i class="devicon-react-original"></i>
+                        <p class="skill-p-tag">React</p>
+                    </div>
+                    <div class="icon-text colour-four" data-aos="fade-up-left">
+                        <i class="devicon-javascript-plain"></i>
+                        <p class="skill-p-tag">JavaScript</p>
+                    </div>
+                    <div class="icon-text colour-five" data-aos="fade-up-left">
+                        <i class="devicon-github-plain"></i>
+                        <p class="skill-p-tag">GitHub</p>
+                    </div>
+                    <div class="icon-text colour-five" data-aos="fade-up-right">
+                        <i class="devicon-visualstudio-plain"></i>
+                        <p class="skill-p-tag">VS Code</p>
+                    </div>
+                    <div class="icon-text colour-four" data-aos="fade-up-right">
+                        <i class="devicon-git-plain"></i>
+                        <p class="skill-p-tag">Git</p>
+                    </div>
+                    <div class="icon-text colour-three" data-aos="fade-up-left">
+                        <i class="fas fa-fire-alt"></i>    
+                        <p class="skill-p-tag">Firebase</p>
+                    </div>
+                    <div class="icon-text colour-two" data-aos="fade-up-left">
+                        <i class="devicon-jquery-plain"></i>
+                        <p class="skill-p-tag">jQuery</p>
+                    </div>
+                    <div class="icon-text colour-one" data-aos="fade-up-left">
+                        <i class="devicon-sass-original"></i>
+                        <p class="skill-p-tag">Sass</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <div id="fifth1"></div>
+        <section class="container" id="contact">
+
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <div class="contact-photo" data-aos="fade-up-right">
+                    <img src="./assets/smiling-photo.jpg" alt="smiling face photo" title="my smiling goofy face">
+                    <p>Fill out the form or just say hello directly!</p>
+                    <p>mikeleriche@gmail.com</p>
+                </div>
+                <form action="" data-aos="fade-up-left">
+                    <fieldset>
+                        <div class="form-half">
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input type="name" placeholder="Name" name="name" id="name">
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                        </div>
+                        <label for="text" class="visuallyHidden">Let me know what I can do for you</label>
+                        <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you and/or your favourite synthesizer."></textarea>
+                    </fieldset>
+                    <button type="submit">Contact me</button>
+                </form>
+            </div>
         </section>
         
          
     </main>
-    <footer class="wrapper">
-        <div class="social-icons">
-            <a href="http://www.github.com/michaelleriche" target="_blank" ><i class="fab fa-github"></i></a>
-            <a href="mailto:mikeleriche@gmail.com"><i class="icon far fa-envelope" tabindex="0" ></i></a>
-            <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a>   
-        </div>    
+    <footer>
+        <div class="container footer">
+            <div class="footer-text">
+                <p>	&copy;copyright 2020 Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span></p>
+            </div>
+        </div>
     </footer>
-    
     <script src="app.js"></script>
 </body>
 </html>

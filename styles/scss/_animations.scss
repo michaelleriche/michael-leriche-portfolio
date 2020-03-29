@@ -90,7 +90,7 @@
     }
     50% {
       opacity: .8;
-      color: $secondaryColour;
+      color: $accentThreeColour;
       text-shadow: 0 10px $accentThreeColour, 0px 20px $accentColour, 0px 30px $accentTwoColour, 0px 40px $primaryColour;
       transform: scale(.8);
     }
@@ -99,7 +99,3 @@
       transform: none;
     }
   }
-  
- 
-  
- 

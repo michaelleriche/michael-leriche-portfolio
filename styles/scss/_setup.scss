@@ -9,8 +9,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
+    width: 100%;
 }
-.border {
-    border-right: 1px solid black;
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 75%;
 
 }
+

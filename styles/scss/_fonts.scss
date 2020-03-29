@@ -1,7 +1,10 @@
 body {
     font-family: $bodyFont;
-    font-weight: 700;
-    color: white;
+    color: black;
+}
+em {
+    font-style: italic;
+    font-weight: 600;
 }
 .header1 {
     color: $secondaryColour;
@@ -18,3 +21,18 @@ body {
 .header5 {
     color: $accentThreeColour;
 }
+.colour-one {
+    color: $accentThreeColour;
+  }
+  .colour-two {
+    color: $accentColour;
+  }
+  .colour-three {
+    color: $secondaryColour;
+  }
+  .colour-four {
+    color: $accentTwoColour;
+  }
+  .colour-five {
+    color: $primaryColour;
+  }
