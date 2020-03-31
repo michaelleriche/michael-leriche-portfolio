@@ -26,15 +26,16 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 50px;
-  border-bottom: 2px solid $primaryColour;
+  border-bottom: 2px solid $colourFive;
 }
 h3 {
   font-size: 2rem;
-  margin: 25px 0;
+  margin-bottom: 25px;
   line-height: 2.5rem;
-  border-bottom: 2px solid $accentThreeColour;
+  border-bottom: 2px solid $colourOne;
   display: inline-block;
 } 
+
 h1,
 h2,
 h3 {
@@ -48,18 +49,41 @@ p {
 img {
   max-width: 100%;
 }
+
+button {
+  text-transform: lowercase;
+  background-color: $colourFive;
+  padding: 15px 50px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: white;
+  box-shadow: 2px 2px black;
+
+}
+button:hover {
+  box-shadow: 6px 6px black;
+}
+button:active {
+  box-shadow: none;
+  color: black;
+}
 span i {
   font-size: 1.5rem;
   margin-left: 15px;
 }
-.portfolio-button button,
-.portfolio-button a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15px 30px;
+a:hover, a:active, a:focus,
+i:hover, i:active, i:focus,
+form:hover, form:active, form:focus,
+section:hover, section:active, section:focus {
+  outline: 0;
 }
+section:focus {
+  border-top: 2px solid gold;
+}
+.portfolio-button-hidden {
+  display: none;
+}
+
 .about-me {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -79,12 +103,14 @@ box-shadow:  20px 20px 60px #d9d9d9,
   margin-left: 30px;
   box-shadow: 10px 10px black;
 }
-
+.contact {
+  padding-top: 50px;
+}
 .skills {
   margin: 100px 0 50px 0;
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0 0;
   background-color: rgba(0,0,0,0.03);
-}
+} 
 .skill-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -151,6 +177,7 @@ i {
 }
 .card2 {
   grid-template-columns: 1.5fr 1fr;
+  
 }
 .portfolio-text1 {
   padding: 0 0 0 30px;
@@ -169,20 +196,20 @@ i {
   text-shadow: 1px 1px black;
 }
 .portfolio-icons i:first-of-type {
-  color: $accentThreeColour;
+  color: $colourOne;
 }
 .portfolio-icons i:nth-of-type(2) {
-  color: $accentColour;
+  color: $colourTwo;
 }
 .portfolio-icons i:nth-of-type(3) {
-  color: $secondaryColour;
+  color: $colourThree;
 }
 .portfolio-icons i:nth-of-type(4),
 .portfolio-icons i:nth-of-type(6) {
-  color: $accentTwoColour;
+  color: $colourFour;
 }
 .portfolio-icons i:nth-of-type(5) {
-  color: $primaryColour;
+  color: $colourFive;
 }
 .contact-form {
   display: grid;
@@ -194,7 +221,7 @@ i {
 }
 .contact-photo img {
     -webkit-filter: hue-rotate(240deg) saturate(3.3) grayscale(50%);
-    filter: hue-rotate(10deg) saturate(3.3) grayscale(50%);
+    filter: hue-rotate(1deg) saturate(3.3) grayscale(50%);
     box-shadow: 5px 5px black;
 }
 
@@ -211,33 +238,316 @@ footer p {
   align-items: center;
   padding: 15px 0;
 }
+@media(max-width: 1200px) {
+  .portfolio-button button{
+    padding: 15px 25px;
+
+  }
+}
+@media(max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  } 
+  .social-icons-header {
+    left: 25px;
+  }
+  #scroll {
+    right: 30px; 
+  }
+}
+//ipad pro
+@media(max-width: 834px) {
+
+  .container {
+    width: 90%;
+  }
+  
+  #scroll {
+    display: none; 
+  }
+  .social-icons-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+.social-icon-circle {
+    height: 70px;
+    width: 70px;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 1px $colourThree;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1,
+.card2 {
+  margin: 10px 0;
+}
+.skills {
+  margin-top: 0;
+}
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portfolio-button {
+  display: none;
+}
+.portfolio-button-hidden {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 70px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio-button-hidden button {
+  text-align: center;
+  width: 300px;
+}
+}
+//ipad
+@media screen and (max-width: 768px) {
+// body {
+//   overflow-x:hidden;
+// }
+.nav-links {
+  position: fixed;
+  right: 0px;
+  height: 85vh;
+  top: 15vh;
+  background-color: rgba(254, 203, 46,0.99);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  z-index: 22;
+}
+.nav-links li {
+  opacity: 0;
+}
+
+.burger {
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 23;
+  border-radius: 2px;
+}
+.nav-active {
+  transform: translateX(0%);
+}
 
 
-@media(max-width: 768px) {
-  // body {
-  //   overflow-x: hidden;
-  // }
-  // .nav-links {
-  //   position: absolute;
-  //   right: 0;
-  //   height: 40vh;
-  //   top:8vh;
-  //   background-color: #FFFBF2;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   width: 20%;
-  //   transform: translateX(100%);
-  //   transition: transform 0.5s ease-in;
-  // }
-  // .nav-links li {
-  //   opacity: 0;
-  // }
-  // .burger {
-  //   display: block;
-  // }
-  // .nav-active { 
-  //   transform: translateX(0%);
-  // }
+
+
+
+
+
+
+  .portfolio-button-hidden {
+    display: none;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    width: 90%;
+  }
+  .about-me-text {
+    display: block;
+    width: 80%;
+  }
+  .about-me-img img {
+    margin-left: 0px;
+    box-shadow: 10px 10px black;
+    width: 250px;
+  }
+  .about-me-img {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio1 {
+    margin-top: 0px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .portfolio-item {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .portfolio-button {
+    margin: 20px 0 70px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card1 {
+    grid-template-rows: 1fr 1.5fr;
+  }
+  .card2 {
+    grid-template-rows: 1.5fr 1fr;
+
+  }
+  .p-item-1 {
+    order: 1;
+  }
+  .portfolio1 {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    margin: auto; 
+  }
+  .portfolio-text2,
+  .portfolio-text1 {
+    padding: 0;
+    margin: 0;
+    order: 2;
+  }
+  .portfolio-text2 h3,
+  .portfolio-text1 h3 {
+    margin:25px 0;
+  }
+  .portfolio-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    margin:20px 0 0 0;
+  }
+  .skills {
+    margin:0px 0 50px 0;
+    padding: 100px 0 0 0;
+    background-color: rgba(0,0,0,0.03);
+  } 
+  .skill-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+    justify-items: center;
+  }
+  .portfolio-button a {
+    padding: 0;
+  }
+  .contact-form {
+    width: 100%;
+    display: block;
+  }
+  .contact-photo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-photo-text p {
+    display: flex;
+    margin: 0;
+  }
+}
+@media(max-width: 610px) {
+  .social-icons-header {
+    bottom: 100px;
+  }
+.social-icon-circle {
+    height: 60px;
+    width: 60px;
+    margin: 10px 0;
+  }
+  .social-icon-circle i {
+    font-size: 2rem;
+  }
+}
+
+//new iphone
+@media(max-width: 414px) {
+  nav {
+    top: 20px;
+    right: 20px;
+}
+  h1,
+  .blinking-cursor {
+    font-size: 2.8rem;
+    margin-top: 0;
+  }
+  h2,h3 {
+    font-size: 1.4rem;
+  }
+  .portfolio-button {
+    margin: 30px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  p,
+  form input,
+  textarea { 
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  button {
+    width:300px;
+    height:75px;
+    margin:0 0 10px 0;
+  }
+  .skill-icons i {
+    font-size: 5rem;
+  }
+  .skills {
+    margin:0;
+    padding: 50px 0 0 0;
+  } 
+  .skill-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1px;
+    justify-items: center;
+    margin: 10px 0;
+  }
+  .last-skill {
+    grid-column: 1/4;    
+  }
+  form button {
+    width: 100%;
+  }
 
 }
+//iphone se
+@media(max-width: 320px) {
+
+  button {
+    width:250px;
+    height:60px;
+    margin:0 0 10px 0;
+  }
+  .header {
+    align-items: flex-start;
+  }
+  .header-center {
+    margin-top: 120px;
+  }
+  .about-me {
+    margin: 50px auto 40px;
+  }
+}
+
+//   .header {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     align-items: flex-end;
+//}

@@ -2,7 +2,6 @@ input,
 button {
     font-size: 1.4rem;
     font-family: $bodyFont;
-    border: none;
     margin: 10px 0;
     padding: 10px 15px;
 }
@@ -10,21 +9,7 @@ input {
     width: 100%;
     box-shadow: inset -5px 5px 5px -7px rgba(0,0,0,0.75);
 }
-button {
-    text-transform: lowercase;
-    background-color: $primaryColour;
-    padding: 15px 50px;
-    border-radius: 25px;
-    transition: 0.3s;
-    color: white;
-}
-button:hover {
-    box-shadow: 5px 5px black;
-}
-button:active {
-    box-shadow: none;
-    color: black;
-}
+
 textarea {
     font-size: 1.4rem;
     font-family: $bodyFont;
@@ -37,7 +22,7 @@ textarea {
 }
 textarea,
 input {
-    border: 2px solid $primaryColour;
+    border: 2px solid $colourFive;
     border-radius: 5px;
 }
 textarea:active,
@@ -45,10 +30,12 @@ input:active,
 textarea:focus,
 input:focus,
 button:focus {
-    border: 2px solid $accentThreeColour;
-color: black;
+    border: 2px solid $colourOne;
+    color: black;
     background-color: rgba(232, 232, 232, 1);
 }
+
+
 form {
     display: flex;
     flex-direction: column;

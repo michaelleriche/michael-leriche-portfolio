@@ -90,8 +90,8 @@
     }
     50% {
       opacity: .8;
-      color: $accentThreeColour;
-      text-shadow: 0 10px $accentThreeColour, 0px 20px $accentColour, 0px 30px $accentTwoColour, 0px 40px $primaryColour;
+      color: $colourOne;
+      text-shadow: 0 10px $colourTwo, 0px 20px $colourThree, 0px 30px $colourFour, 0px 40px $colourFive;
       transform: scale(.8);
     }
     100% {

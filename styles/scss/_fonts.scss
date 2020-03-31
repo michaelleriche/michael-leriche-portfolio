@@ -6,33 +6,18 @@ em {
     font-style: italic;
     font-weight: 600;
 }
-.header1 {
-    color: $secondaryColour;
-}
-.header2 {
-    color: $accentTwoColour;
-}
-.header3 {
-    color: $primaryColour;
-}
-.header4 {
-    color: $accentColour;
-}
-.header5 {
-    color: $accentThreeColour;
-}
 .colour-one {
-    color: $accentThreeColour;
-  }
-  .colour-two {
-    color: $accentColour;
-  }
-  .colour-three {
-    color: $secondaryColour;
-  }
-  .colour-four {
-    color: $accentTwoColour;
-  }
-  .colour-five {
-    color: $primaryColour;
-  }
+    color: $colourOne;
+}
+.colour-two {
+    color: $colourTwo;
+}
+.colour-three {
+    color: $colourThree;
+}
+.colour-four {
+    color: $colourFour;
+}
+.colour-five {
+    color: $colourFive;
+}

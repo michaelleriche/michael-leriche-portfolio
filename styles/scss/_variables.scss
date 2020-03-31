@@ -1,15 +1,22 @@
 $bodyFont:'Gothic A1';
-// $primaryColour: #106fb2;
-// $primaryColour: #ff5666;
-// $secondaryColour: #04444e;
-// $accentColour: #5dd228;
-// $backgroundColour: #FFFBF2;
-
-
-$accentThreeColour: #1e91d6;
-$accentColour: #53d769;
-$secondaryColour: #fecb2e;
-$accentTwoColour: #fd9426;
-$primaryColour: #fc3d39;
+$colourOne: #1e91d6;
+$colourTwo: #53d769;
+$colourThree: #fecb2e;
+$colourFour: #fd9426;
+$colourFive: #fc3d39;
 $backgroundColour: black;
-
+.line1 {
+    background-color: $colourOne;
+}
+.line2 {
+    background-color: $colourTwo;
+}
+.line3 {
+    background-color: $colourThree;
+}
+.line4 {
+    background-color: $colourFour;
+}
+.line5 {
+    background-color: $colourFive;
+}

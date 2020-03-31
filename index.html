@@ -20,18 +20,19 @@
     
 <header class="header-background"> 
     <div id="first1"></div>
-    <div class="top-bar">
+    <div class="top-bar wrapper" id="home">
         <nav>
-            <ul class="nav-links">
-                <li><a href="#about-me">About_Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger" tabindex="0">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-links-a">Home</a></li>
+                    <li><a href="#about-me" class="nav-links-b">About_Me</a></li>
+                    <li><a href="#portfolio" class="nav-links-c">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-links-d">Skills</a></li>
+                    <li><a href="#contact" class="nav-links-e">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 <div class="line4"></div>
                 <div class="line5"></div>
             </div>
@@ -41,23 +42,23 @@
     <div class="header wrapper">
         <div class="social-icons social-icons-header">
             <div class="social-icon-circle">
-                <a href="http://www.github.com/michaelleriche" class="header3" target="_blank" ><i class="fab fa-github"></i></a>
+                <a href="http://www.github.com/michaelleriche" class="colour-five" target="_blank"><i class="fab fa-github" tabindex="0"></i></a>
             </div>
             <div class="social-icon-circle">
-                <a href="mailto:mikeleriche@gmail.com" class="header1"><i class="icon far fa-envelope" tabindex="0" ></i></a>
+                <a href="mailto:mikeleriche@gmail.com" class="colour-three"><i class="icon far fa-envelope" tabindex="0" ></i></a>
             </div>
             <div class="social-icon-circle">
-                <a href="http://www.twitter.com/mlerichecodes" class="header5" target="_blank" ><i class="fab fa-twitter"></i></a>
+                <a href="http://www.twitter.com/mlerichecodes" class="colour-one" target="_blank" ><i class="fab fa-twitter" tabindex="0"></i></a>
             </div>    
             <div class="social-icon-circle">
-                <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" class="header4" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a> 
+                <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" class="colour-two" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a> 
             </div>         
         </div>  
         <!-- CENTER -->
         <div class="header-center">
             <div class="hero-image-text">
                 <h3 class="hero-h3">Hello, I'm</h3>
-                <h1>Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span><span class="blinking-cursor">_</span></h1>
+                <h1>Michael le <span class="colour-one">R</span><span class="colour-two">i</span><span class="colour-three">c</span><span class="colour-four">h</span><span class="colour-five">e</span><span class="blinking-cursor">_</span></h1>
                 <h2 class="header-h2"> < Web Developer /></h2>
             </div>
             <div class="header-down-arrow">
@@ -79,7 +80,7 @@
     
 <main>
     <div id="second1"></div>
-    <section class="about-me container" id="about-me">
+    <section class="about-me container" id="about-me" tabindex="0">
             <div class="about-me-img" data-aos="fade-up-right">
                 <img src="./assets/headshot-crop.png"  title="michael le riche headshot" alt="michael le riche headshot">
             </div>    
@@ -94,10 +95,9 @@
         <div id="third1"></div>
         <section class="portfolio1 container" id="portfolio" data-aos="fade-up">
             <h2>Recent Projects</h2>
-            
             <ul class="carousel">
                 <li class="portfolio-item card1">
-                    <div data-aos="fade-up-right">
+                    <div class="p-item-1" data-aos="fade-up-right">
                         <img src="./assets/laptop-funguy.png" class="laptop" title="Is this fungi a Fun Guy App" alt="Is this fungi a Fun Guy App">
                         <div class="portfolio-icons">
                             <i class="devicon-react-original"></i>
@@ -107,6 +107,10 @@
                             <i class="devicon-github-plain"></i>
                             <i class="fas fa-fire-alt"></i>
                         </div>   
+                        <div class="portfolio-button-hidden">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>See the code <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div> 
                     </div>
                     <div class="portfolio-text1" data-aos="fade-up-left">
                         <h3>Is this fungi a Fun Guy?</h3>
@@ -126,7 +130,7 @@
                             <a href="https://github.com/michael-leriche-alice-song/movie-hunter-v2" target="_blank"><button>See the code  <span><i class="fas fa-external-link-alt"></i></span></button></a>
                         </div>
                     </div>
-                    <div data-aos="fade-up-left">
+                    <div class="p-item-1" data-aos="fade-up-left">
                         <img src="./assets/laptop-moviecat.png" title="Movie Cat App" alt="Movie Cat App">
                         <div class="portfolio-icons">
                             <i class="devicon-javascript-plain"></i>
@@ -135,10 +139,14 @@
                             <i class="devicon-github-plain"></i>
                             <i class="devicon-sass-original"></i>
                         </div>  
+                        <div class="portfolio-button-hidden">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>See the code <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div> 
                     </div>
                 </li>
                 <li class="portfolio-item card1">
-                    <div data-aos="fade-up-right">
+                    <div class="p-item-1" data-aos="fade-up-right">
                         <img src="./assets/laptop-larry-shine.png" title="Larry David's Soundboard" alt="Larry David's Soundboard">
                         <div class="portfolio-icons">
                             <i class="devicon-javascript-plain"></i>
@@ -147,6 +155,10 @@
                             <i class="devicon-github-plain"></i>
                             <i class="devicon-sass-original"></i>
                         </div>  
+                        <div class="portfolio-button-hidden">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>See the code <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div> 
                     </div>
                     <div class="portfolio-text1" data-aos="fade-up-left">
                         <h3>Larry David's Pretty, Pretty, Pretty Good Soundboard</h3>
@@ -166,7 +178,7 @@
                             <a href="https://github.com/michaelleriche/michael-leriche-project-two" target="_blank"><button>See the code  <span><i class="fas fa-external-link-alt"></i></span></button></a>
                         </div>
                     </div>
-                    <div data-aos="fade-up-left">
+                    <div class="p-item-1" data-aos="fade-up-left">
                         <img src="./assets/laptop-harper.png" title="Client PSD conversion" alt="Client PSD conversion">
                         <div class="portfolio-icons">
                             <i class="devicon-html5-plain"></i>
@@ -174,13 +186,17 @@
                             <i class="devicon-github-plain"></i>
                             <i class="devicon-sass-original"></i>
                         </div> 
+                        <div class="portfolio-button-hidden">
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>View Live  <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                            <a href="https://github.com/michaelleriche/michael-leriche-project-three" target="_blank"><button>See the code <span><i class="fas fa-external-link-alt"></i></span></button></a>
+                        </div> 
                     </div>
                 </li>
             </ul>
    
         </section>
         
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" tabindex="0">
             <div id="fourth1"></div>
             <div class="container">
                 <h2 data-aos="fade-up">Skills</h2>
@@ -221,7 +237,7 @@
                         <i class="devicon-jquery-plain"></i>
                         <p class="skill-p-tag">jQuery</p>
                     </div>
-                    <div class="icon-text colour-one" data-aos="fade-up-left">
+                    <div class="icon-text colour-one last-skill" data-aos="fade-up-left">
                         <i class="devicon-sass-original"></i>
                         <p class="skill-p-tag">Sass</p>
                     </div>
@@ -229,14 +245,15 @@
             </div>
         </section>
         <div id="fifth1"></div>
-        <section class="container" id="contact">
-
+        <section class="container contact" tabindex="0" id="contact">
             <h2>Contact Me</h2>
             <div class="contact-form">
                 <div class="contact-photo" data-aos="fade-up-right">
                     <img src="./assets/smiling-photo.jpg" alt="smiling face photo" title="my smiling goofy face">
-                    <p>Fill out the form or just say hello directly!</p>
-                    <p>mikeleriche@gmail.com</p>
+                    <div class="contact-photo-text">
+                        <p>Fill out the form or just say hello directly!</p>
+                        <p>mikeleriche@gmail.com</p>
+                    </div>
                 </div>
                 <form action="" data-aos="fade-up-left">
                     <fieldset>
@@ -247,7 +264,7 @@
                             <input type="email" placeholder="Email" id="email">
                         </div>
                         <label for="text" class="visuallyHidden">Let me know what I can do for you</label>
-                        <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you and/or your favourite synthesizer."></textarea>
+                        <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you and/or your favourite synthesizer. **(Mine is the Arp 2600)**"></textarea>
                     </fieldset>
                     <button type="submit">Contact me</button>
                 </form>
@@ -259,7 +276,7 @@
     <footer>
         <div class="container footer">
             <div class="footer-text">
-                <p>	&copy;copyright 2020 Michael le <span class="header5">R</span><span class="header4">i</span><span class="header1">c</span><span class="header2">h</span><span class="header3">e</span></p>
+                <p>	&copy;copyright 2020 Michael le <span class="colour-three">R</span><span class="colour-four">i</span><span class="colour-one">c</span><span class="colour-two">h</span><span class="colour-five">e</span></p>
             </div>
         </div>
     </footer>
