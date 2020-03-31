@@ -71,14 +71,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-a:focus {
-  outline: thin dotted;
-}
-
-a:active, a:hover {
-  outline: 0;
-}
-
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -833,7 +825,14 @@ span i {
   margin-left: 15px;
 }
 
-a:hover, a:active, a:focus,
+a:focus {
+  outline: 0;
+}
+
+.nav-links a:focus {
+  border-bottom: 1px solid #fecb2e;
+}
+
 i:hover, i:active, i:focus,
 form:hover, form:active, form:focus,
 section:hover, section:active, section:focus {

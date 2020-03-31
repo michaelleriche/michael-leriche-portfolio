@@ -21,24 +21,24 @@
 <header class="header-background"> 
     <div id="first1"></div>
     <div class="top-bar wrapper" id="home">
-        <div class="burger">
+        <div class="burger" tabindex="0">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
             <div class="line4"></div>
             <div class="line5"></div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About_Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav tabindex="0">
+            <ul class="nav-links" tabindex="0">
+                <li><a href="#home" tabindex="1">Home</a></li>
+                <li><a href="#about-me" tabindex="1">About_Me</a></li>
+                <li><a href="#portfolio" tabindex="1">Portfolio</a></li>
+                <li><a href="#skills" tabindex="1">Skills</a></li>
+                <li><a href="#contact" tabindex="1">Contact</a></li>
             </ul>
         </nav>
     </div>
-                                            <!-- left side -->
+
     <div class="header wrapper">
         <div class="social-icons social-icons-header">
             <div class="social-icon-circle">
@@ -51,10 +51,10 @@
                 <a href="http://www.twitter.com/mlerichecodes" class="colour-one" target="_blank" ><i class="fab fa-twitter" tabindex="0"></i></a>
             </div>    
             <div class="social-icon-circle">
-                <a href="https://www.linkedin.com/in/michael-le-riche-147b361a0/" class="colour-two" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a> 
+                <a href="http://www.linkedin.com/in/michael-leriche" class="colour-two" target="_blank"><i class="icon fab fa-linkedin-in" tabindex="0"></i></a> 
             </div>         
         </div>  
-        <!-- CENTER -->
+
         <div class="header-center">
             <div class="hero-image-text">
                 <h3 class="hero-h3">Hello, I'm</h3>
@@ -66,13 +66,13 @@
             </div>
         </div>
         <!-- RIGHT SIDE -->
-            <div id="scroll">
-                <div id="first" class="scroll-item">&nbsp;</div>
-                <div id="second" class="scroll-item">&nbsp;</div>
-                <div id="third" class="scroll-item">&nbsp;</div>
-                <div id="fourth" class="scroll-item">&nbsp;</div>
-                <div id="fifth" class="scroll-item">&nbsp;</div>
-            </div>
+        <div id="scroll">
+            <div id="first" class="scroll-item">&nbsp;</div>
+            <div id="second" class="scroll-item">&nbsp;</div>
+            <div id="third" class="scroll-item">&nbsp;</div>
+            <div id="fourth" class="scroll-item">&nbsp;</div>
+            <div id="fifth" class="scroll-item">&nbsp;</div>
+        </div>
     </div>
 </header>
     
@@ -255,18 +255,19 @@
                         <p>mikeleriche@gmail.com</p>
                     </div>
                 </div>
-                <form action="" data-aos="fade-up-left">
+                
+                <form action="https://formspree.io/xyydgjoq" method="POST" data-aos="fade-up-left">
                     <fieldset>
                         <div class="form-half">
                             <label for="name" class="visuallyHidden">Name</label>
-                            <input type="name" placeholder="Name" name="name" id="name">
+                            <input type="text" placeholder="Name" name="name" id="name">
                             <label for="email" class="visuallyHidden">Email</label>
-                            <input type="email" placeholder="Email" id="email">
+                            <input type="email" placeholder="Email" name="_replyto" id="email">
                         </div>
                         <label for="text" class="visuallyHidden">Let me know what I can do for you</label>
                         <textarea style="resize: none;" name="text" cols="30" rows="10" placeholder="Let me know what I can do for you and/or your favourite synthesizer. **(Mine is the Arp 2600)**"></textarea>
                     </fieldset>
-                    <button type="submit">Contact me</button>
+                    <button type="submit" value="Send">Contact me</button>
                 </form>
             </div>
         </section>
