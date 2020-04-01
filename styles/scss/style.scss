@@ -70,8 +70,8 @@ span i {
   }
   .nav-links a:focus {
     border-bottom: 1px solid $colourThree;
-
   }
+
 
 i:hover, i:active, i:focus,
 form:hover, form:active, form:focus,
@@ -172,6 +172,7 @@ i {
   justify-content: space-around;
 }
 
+
 .card1 {
   grid-template-columns: 1fr 1.5fr;
 }
@@ -254,11 +255,47 @@ footer p {
   }
 }
 //ipad pro
-@media(max-width: 834px) {
+@media(max-width: 840px) {
   .container {
     width: 90%;
   }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(200, 200, 200,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 22;
+  }
+  .nav-links a {
+    font-size: 4rem;
   
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 23;
+    border-radius: 2px;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .top-bar {
+    background: none;
+  }
   #scroll {
     display: none; 
   }
@@ -310,36 +347,36 @@ footer p {
 }
 //ipad
 @media screen and (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    right: 0px;
-    height: 85vh;
-    top: 15vh;
-    background-color: rgba(254, 203, 46,0.99);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    z-index: 100;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 22;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 23;
-    border-radius: 2px;
-  }
-  .nav-active {
-    transform: translateX(0%);
-  }
+  // .nav-links {
+  //   position: fixed;
+  //   right: 0px;
+  //   height: 90vh;
+  //   top: 10vh;
+  //   background-color: rgba(254, 203, 46,0.9);
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   width: 100%;
+  //   z-index: 100;
+  //   transform: translateX(100%);
+  //   transition: transform 0.5s ease-in;
+  //   z-index: 22;
+  // }
+  // .nav-links li {
+  //   opacity: 0;
+  // }
+  // .burger {
+  //   display: block;
+  //   position: fixed;
+  //   top: 10px;
+  //   right: 10px;
+  //   z-index: 23;
+  //   border-radius: 2px;
+  // }
+  // .nav-active {
+  //   transform: translateX(0%);
+  // }
   .portfolio-button-hidden {
     display: none;
   }

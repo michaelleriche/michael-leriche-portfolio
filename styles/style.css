@@ -277,6 +277,21 @@ em {
 
 .header-background {
   background-color: black;
+  background-image: url(../assets/buchla.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-background:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -421,6 +436,8 @@ h1,
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  z-index: 500;
+  height: 8vh;
 }
 
 .burger {
@@ -457,6 +474,7 @@ h1,
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  z-index: 150;
 }
 
 .nav-links li {
@@ -464,12 +482,14 @@ h1,
 }
 
 .nav-links a {
-  color: #fc3d39;
+  color: white;
   text-decoration: none;
+  text-shadow: 3px 2px black;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: lowercase;
+  border-bottom: 2px solid #53d769;
 }
 
 nav {
@@ -492,7 +512,7 @@ nav {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 5px;
   background: #fecb2e;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -502,6 +522,7 @@ nav {
 .nav-links a:hover:after {
   width: 100%;
   left: 0;
+  border-style: none;
 }
 
 #scroll {
@@ -525,13 +546,13 @@ nav {
 }
 
 .scroll-item {
-  border: 3px solid #fc3d39;
+  border: 3px solid #53d769;
   border-radius: 25px;
 }
 
 .scroll-item:hover,
 .scroll-item-active {
-  background-color: #fd9426;
+  background-color: #fecb2e;
 }
 
 .scroll-item,
@@ -542,7 +563,9 @@ nav {
 }
 
 .scroll-item-active {
-  border: 3px solid #fecb2e;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
 }
 
 #first1,
@@ -1092,9 +1115,58 @@ footer p {
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 840px) {
   .container {
     width: 90%;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(200, 200, 200, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    z-index: 100;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 22;
+  }
+  .nav-links a {
+    font-size: 4rem;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 23;
+    border-radius: 2px;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .top-bar {
+    background: none;
   }
   #scroll {
     display: none;
@@ -1170,49 +1242,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    right: 0px;
-    height: 85vh;
-    top: 15vh;
-    background-color: rgba(254, 203, 46, 0.99);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    z-index: 100;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    z-index: 22;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 23;
-    border-radius: 2px;
-  }
-  .nav-active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
   .portfolio-button-hidden {
     display: none;
   }
