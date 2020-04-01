@@ -42,6 +42,7 @@
     right: 0;
     text-align: center;
     z-index: 1;
+    color: white;
 }
 .header-h2 {
     display: inline;
@@ -144,7 +145,6 @@ h1,
     font-weight: 400;
     font-size: 1.5rem;
     text-transform: lowercase;
-    // border-bottom: 2px solid $colourTwo;
 }
 nav {
     display: flex;
