@@ -9,9 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: white;
-    font-size: 62.5%;
-    overflow-x: hidden;
+  background-color: white;
+  font-size: 62.5%;
+  overflow-x: hidden;
 } 
 h1 {
   margin: 40px 0 20px 0;
@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 50px;
-  border-bottom: 2px solid $colourFive;
+  border-bottom: 2px solid $colourOne;
 }
 h3 {
   font-size: 2rem;
@@ -44,35 +44,44 @@ p {
 img {
   max-width: 100%;
 }
+input,
 button {
+  font-size: 1.4rem;
+  margin: 10px 0;
   text-transform: lowercase;
-  background-color: $colourFive;
-  padding: 15px 50px;
-  border-radius: 8px;
+  padding: 20px 45px;
+  border: 2px solid $colourTwo;
+  border-radius: 3px;
   transition: 0.3s;
+  
+}
+button {
   color: white;
   box-shadow: 2px 2px black;
+  background-color: $colourTwo;
+
+}
+input {
+  color: black;
 }
 button:hover {
-  box-shadow: 6px 6px black;
+  box-shadow: 5px 5px black;
 }
 button:active {
   box-shadow: none;
-  color: black;
+  background-color: white;
+  color: $colourTwo;
 }
 span i {
   font-size: 1.5rem;
   margin-left: 15px;
 }
-  // li:focus,
-  a:focus {
-    outline: 0;
-  }
-  .nav-links a:focus {
-    border-bottom: 1px solid $colourThree;
-  }
-
-
+a:focus {
+  outline: 0;
+}
+.nav-links a:focus {
+  border-bottom: 5px solid $colourThree;
+}
 i:hover, i:active, i:focus,
 form:hover, form:active, form:focus,
 section:hover, section:active, section:focus {
@@ -171,14 +180,11 @@ i {
   display: flex;
   justify-content: space-around;
 }
-
-
 .card1 {
   grid-template-columns: 1fr 1.5fr;
 }
 .card2 {
   grid-template-columns: 1.5fr 1fr;
-  
 }
 .portfolio-text1 {
   padding: 0 0 0 30px;
@@ -221,9 +227,9 @@ i {
   margin-top: 40px;
 }
 .contact-photo img {
-    -webkit-filter: hue-rotate(240deg) saturate(3.3) grayscale(50%);
-    filter: hue-rotate(1deg) saturate(3.3) grayscale(50%);
-    box-shadow: 5px 5px black;
+  -webkit-filter: hue-rotate(240deg) saturate(3.3) grayscale(50%);
+  filter: hue-rotate(15deg) saturate(3.3) grayscale(50%);
+  box-shadow: 5px 5px black;
 }
 footer {
   margin-top: 75px;
@@ -347,36 +353,6 @@ footer p {
 }
 //ipad
 @media screen and (max-width: 768px) {
-  // .nav-links {
-  //   position: fixed;
-  //   right: 0px;
-  //   height: 90vh;
-  //   top: 10vh;
-  //   background-color: rgba(254, 203, 46,0.9);
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   width: 100%;
-  //   z-index: 100;
-  //   transform: translateX(100%);
-  //   transition: transform 0.5s ease-in;
-  //   z-index: 22;
-  // }
-  // .nav-links li {
-  //   opacity: 0;
-  // }
-  // .burger {
-  //   display: block;
-  //   position: fixed;
-  //   top: 10px;
-  //   right: 10px;
-  //   z-index: 23;
-  //   border-radius: 2px;
-  // }
-  // .nav-active {
-  //   transform: translateX(0%);
-  // }
   .portfolio-button-hidden {
     display: none;
   }
@@ -497,7 +473,7 @@ footer p {
   nav {
     top: 20px;
     right: 20px;
-}
+  }
   h1,
   .blinking-cursor {
     font-size: 2.8rem;
@@ -548,7 +524,6 @@ footer p {
 }
 //iphone se
 @media(max-width: 320px) {
-
   button {
     width:250px;
     height:60px;

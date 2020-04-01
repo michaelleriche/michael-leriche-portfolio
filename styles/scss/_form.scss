@@ -1,20 +1,11 @@
-input,
-button {
-    font-size: 1.4rem;
-    font-family: $bodyFont;
-    margin: 10px 0;
-    padding: 10px 15px;
-}
+
 input {
     width: 100%;
-    box-shadow: inset -5px 5px 5px -7px rgba(0,0,0,0.75);
 }
-
 textarea {
     font-size: 1.4rem;
     font-family: $bodyFont;
     border: none;
-    box-shadow: inset -5px 5px 5px -7px rgba(0,0,0,0.75);
     width: 100%;
     border: none;
     margin: 10px 0;
@@ -22,20 +13,19 @@ textarea {
 }
 textarea,
 input {
-    border: 2px solid $colourFive;
-    border-radius: 5px;
+    border: 2px solid $colourTwo;
+    border-radius: 3px;
+    background-color: rgba(232, 232, 232, 1);
 }
 textarea:active,
 input:active,
 textarea:focus,
 input:focus,
 button:focus {
-    border: 2px solid $colourOne;
+    border: 2px solid $colourThree;
     color: black;
-    background-color: rgba(232, 232, 232, 1);
+    background-color:white;
 }
-
-
 form {
     display: flex;
     flex-direction: column;
