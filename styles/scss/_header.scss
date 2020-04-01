@@ -144,7 +144,7 @@ h1,
     font-weight: 400;
     font-size: 1.5rem;
     text-transform: lowercase;
-    border-bottom: 2px solid $colourTwo;
+    // border-bottom: 2px solid $colourTwo;
 }
 nav {
     display: flex;
@@ -158,8 +158,8 @@ nav {
     bottom: 0;
     content: "";
     display: block;
-    height: 5px;
-    background: $colourThree;
+    height: 2px;
+    background: $colourTwo;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 

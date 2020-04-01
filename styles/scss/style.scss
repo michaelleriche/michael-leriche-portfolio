@@ -48,14 +48,14 @@ input,
 button {
   font-size: 1.4rem;
   margin: 10px 0;
-  text-transform: lowercase;
   padding: 20px 45px;
-  border: 2px solid $colourTwo;
   border-radius: 3px;
   transition: 0.3s;
   
 }
 button {
+  text-transform: lowercase;
+  border: 2px solid $colourTwo;
   color: white;
   box-shadow: 2px 2px black;
   background-color: $colourTwo;

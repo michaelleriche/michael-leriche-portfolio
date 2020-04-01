@@ -5,7 +5,6 @@ input {
 textarea {
     font-size: 1.4rem;
     font-family: $bodyFont;
-    border: none;
     width: 100%;
     border: none;
     margin: 10px 0;
@@ -13,7 +12,9 @@ textarea {
 }
 textarea,
 input {
-    border: 2px solid $colourTwo;
+    color: black;
+    font-family: $bodyFont;
+    border: 2px solid white;
     border-radius: 3px;
     background-color: rgba(232, 232, 232, 1);
 }

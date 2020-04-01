@@ -489,7 +489,6 @@ h1,
   font-weight: 400;
   font-size: 1.5rem;
   text-transform: lowercase;
-  border-bottom: 2px solid #53d769;
 }
 
 nav {
@@ -512,8 +511,8 @@ nav {
   bottom: 0;
   content: "";
   display: block;
-  height: 5px;
-  background: #fecb2e;
+  height: 2px;
+  background: #53d769;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
@@ -710,7 +709,6 @@ input {
 textarea {
   font-size: 1.4rem;
   font-family: "Gothic A1";
-  border: none;
   width: 100%;
   border: none;
   margin: 10px 0;
@@ -719,7 +717,9 @@ textarea {
 
 textarea,
 input {
-  border: 2px solid #53d769;
+  color: black;
+  font-family: "Gothic A1";
+  border: 2px solid white;
   border-radius: 3px;
   background-color: #e8e8e8;
 }
@@ -812,15 +812,15 @@ input,
 button {
   font-size: 1.4rem;
   margin: 10px 0;
-  text-transform: lowercase;
   padding: 20px 45px;
-  border: 2px solid #53d769;
   border-radius: 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 button {
+  text-transform: lowercase;
+  border: 2px solid #53d769;
   color: white;
   -webkit-box-shadow: 2px 2px black;
           box-shadow: 2px 2px black;
