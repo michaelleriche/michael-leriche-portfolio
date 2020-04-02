@@ -68,12 +68,15 @@ h1,
     margin: 15px;
     text-shadow: 1px 1px black;
     transition: 0.3s;
+    z-index: 99999999;
 }
 .social-icons-header {
     display: flex;
     flex-direction: column;
     position: fixed;
     left: 50px;
+    z-index: 99999999;
+
 }
 .social-icon-circle {
     height: 70px;

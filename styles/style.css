@@ -374,6 +374,7 @@ h1,
   text-shadow: 1px 1px black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 99999999;
 }
 
 .social-icons-header {
@@ -386,6 +387,7 @@ h1,
           flex-direction: column;
   position: fixed;
   left: 50px;
+  z-index: 99999999;
 }
 
 .social-icon-circle {
