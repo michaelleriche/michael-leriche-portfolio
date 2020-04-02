@@ -1184,7 +1184,7 @@ footer p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: absolute;
-    bottom: 100px;
+    top: 60px;
     left: 0;
   }
   .social-icon-circle {
@@ -1382,9 +1382,6 @@ footer p {
 }
 
 @media (max-width: 610px) {
-  .social-icons-header {
-    bottom: 100px;
-  }
   .social-icon-circle {
     height: 60px;
     width: 60px;
@@ -1392,6 +1389,27 @@ footer p {
   }
   .social-icon-circle i {
     font-size: 2rem;
+  }
+  .skill-icons i {
+    font-size: 5rem;
+  }
+  .skills {
+    margin: 0;
+    padding: 50px 0 0 0;
+  }
+  .skill-icons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    justify-items: center;
+    margin: 10px 0;
+  }
+  .last-skill {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
   }
 }
 
