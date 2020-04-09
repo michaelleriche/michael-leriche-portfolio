@@ -3,29 +3,35 @@ input {
     width: 100%;
 }
 textarea {
+    margin: 10px 0;
+  padding: 20px 45px;
     font-size: 1.4rem;
     font-family: $bodyFont;
     width: 100%;
     border: none;
-    margin: 10px 0;
-    padding: 10px 15px;
+    // margin: 10px 0;
+    // padding: 10px 15px;
 }
 textarea,
 input {
     color: black;
+    text-transform: lowercase;
     font-family: $bodyFont;
-    border: 2px solid white;
+    border: 1px solid grey;
+    // border-bottom: 1px solid grey;
     border-radius: 3px;
-    background-color: rgba(232, 232, 232, 1);
+    background-color: white;
+    // box-shadow: 2px 2px black;
+
 }
 textarea:active,
 input:active,
 textarea:focus,
 input:focus,
 button:focus {
-    border: 2px solid $colourThree;
+    border: 1px solid black;
     color: black;
-    background-color:white;
+    box-shadow: 2px 2px black;
 }
 form {
     display: flex;

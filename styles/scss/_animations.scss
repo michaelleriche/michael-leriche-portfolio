@@ -86,8 +86,8 @@
     }
     50% {
       opacity: .8;
-      color: $colourOne;
-      text-shadow: 0 10px $colourTwo, 0px 20px $colourThree, 0px 30px $colourFour, 0px 40px $colourFive;
+      color: white;
+      text-shadow: 0 10px white, 0px 20px white, 0px 15px rgba(0,0,0,0.6), 0px 20px rgba(0,0,0,0.8);
       transform: scale(.8);
     }
     100% {
