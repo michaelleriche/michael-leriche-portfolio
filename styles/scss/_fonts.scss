@@ -4,23 +4,18 @@ body {
 }
 h1, h2, h3, h4, a {
     font-family: $headerFont;
+    text-decoration: none;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1rem;
 }
 em {
     font-style: italic;
     font-weight: 600;
 }
-.colour-one {
-    color: $colourOne;
-}
-.colour-two {
-    color: $colourTwo;
-}
-.colour-three {
-    color: $colourThree;
-}
-.colour-four {
-    color: $colourFour;
-}
-.colour-five {
-    color: $colourFive;
-}
+

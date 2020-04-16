@@ -1,39 +1,27 @@
-.header-background {
-    background-color: $backgroundColour;
-    background-image: url(../assets/buchla.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+:root {
+    --primary-color: #FF4835;
+  }
+  [data-theme="dark"] {
+    --primary-color: #3ddc97;
+}
+.header-background { 
     position: relative;
 }
-.header-background:before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-}
 .header {
-    height: 98vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
-}
-.header-center {
-    width: 100%;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    overflow: hidden;
 }
 .hero-image-text {
-    width: 100%;
-    display: block;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-left: 20px;
+    align-items: flex-start;
 }
 .header-down-arrow {
     position: absolute;
@@ -42,7 +30,13 @@
     right: 0;
     text-align: center;
     z-index: 1;
-    color: white;
+    color: black;
+}
+.header-down-arrow i {
+    animation: fade-slide-up 0.5s 0.5s ease-out forwards,
+    pulse 2s 1s ease-out infinite;
+    opacity: 0;
+    font-size: 1rem;
 }
 .header-h2 {
     display: inline;
@@ -51,32 +45,26 @@
 h1,
 .header-h2,
 .hero-h3 {
-    color: white;
+    color: black;
     opacity: 0;
+    margin-bottom: 0px;
     animation: fade-slide-up 0.7s 0.5s ease-out forwards;
 }
-.header-down-arrow i {
-    animation: fade-slide-up 0.5s 0.5s ease-out forwards,
-    pulse 2s 1s ease-out infinite;
-    opacity: 0;
-}
-.hero-image h3 {
-    margin-top: 40px;
-}
+
 .social-icons i {
     font-size: 1.7rem;
     margin: 15px;
-    text-shadow: 1px 1px black;
-    transition: 0.3s;
+    color: black;
+    transition: 0.7s;
     z-index: 99999999;
 }
 .social-icons-header {
     display: flex;
     flex-direction: column;
     position: fixed;
+    top: 200px;
     left: 50px;
     z-index: 100;
-
 }
 .social-icon-circle {
     height: 50px;
@@ -87,32 +75,34 @@ h1,
     align-items: center;
 }
 .social-icons i:hover {
-    scale: 1.4;
+    scale: 1.5;
     transform: rotate(360deg);
+    color: var(--primary-color);
 }
 .social-icon-circle:focus-within,
 .social-icon-circle i:focus-within {
-    text-shadow: -1px 1px $colourThree;
+    text-shadow: -1px 1px var(--primary-color);
 }
 .social-icon-circle:focus-within {
-    border: 2px solid $colourThree;
-    // background:radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(252,70,107,1) 10%);      
+    border: 2px solid var(--primary-color);
 }
-// .social-icon-circle:hover {
-//     border: 2px solid $colourThree; 
-// }
 .top-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 8vh;
+}
+.long-lat {
+    margin-top: 10px;
+    width: 20%;
 }
 .burger {
     outline: 0;
     display: none;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid transparent;
     padding: 10px;
     border-radius: 50px;
 }
@@ -120,34 +110,34 @@ h1,
     width: 30px;
     height: 5px;
     margin: 5px;
+    background-color: black;
 }
 .burger:focus {
-    border: 2px solid $colourFive;
+    border: 2px solid var(--primary-color);
     padding: 10px;
-    border-radius: 50px;
-    box-shadow:2px 2px 5px $colourThree;
+    box-shadow:2px 2px 5px var(--primary-color);
+}
+.burger:hover {
+    background-color: var(--primary-color);
+
 }
 .nav-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 50%;
     z-index: 200;
 }
 .nav-links li {
     list-style: none;
 }
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 2px black;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: 1.5rem;
     text-transform: lowercase;
     z-index: 200;
-
-
+}
+.long-lat:hover,
+.nav-links a:hover {
+    color: var(--primary-color);
 }
 nav {
     display: flex;
@@ -162,19 +152,17 @@ nav {
     bottom: 0;
     content: "";
     display: block;
-    height: 2px;
-    background: $colourThree;
+    right: 0;
+    height: 1px;
+    background: black;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
     z-index: 199;
-
-
 }
 .nav-links a:hover:after { 
     width: 100%; 
     left: 0; 
     border-style: none;
-
 }
 #scroll {
     position: fixed;
@@ -193,7 +181,8 @@ nav {
 }
 .scroll-item:hover,
 .scroll-item-active {
-    background-color: white;
+    background-color:var(--primary-color);
+
 }
 .scroll-item,
 .scroll-item-active {
@@ -212,3 +201,103 @@ nav {
     width: 1%;
     position: absolute;
 }
+
+.follow-cursor {
+    border: 3px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -999999999999999;
+    
+}
+.big-boy {
+    overflow: hidden;
+    height: 400px;
+    width: 1000px;
+    border: 2px solid black;
+    position: absolute;
+}
+.compass_container {
+    position: absolute;
+    width: 2000px;
+    height: 1200px;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.land {
+    width: 2000px;
+    height: 1000px;
+    background:var(--primary-color);
+    ;
+    position: relative;
+    left: -1000px;
+}
+.point {
+    width: 5px;
+    height: 0;
+    position: absolute;
+    top: calc(45% - 70px);
+    left: calc(50% - 120px);
+    border: 120px solid transparent;
+}
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    
+    em {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: var(--primary-color);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

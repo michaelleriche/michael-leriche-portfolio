@@ -9,8 +9,6 @@ textarea {
     font-family: $bodyFont;
     width: 100%;
     border: none;
-    // margin: 10px 0;
-    // padding: 10px 15px;
 }
 textarea,
 input {
@@ -18,11 +16,8 @@ input {
     text-transform: lowercase;
     font-family: $bodyFont;
     border: 1px solid grey;
-    // border-bottom: 1px solid grey;
     border-radius: 3px;
     background-color: white;
-    // box-shadow: 2px 2px black;
-
 }
 textarea:active,
 input:active,

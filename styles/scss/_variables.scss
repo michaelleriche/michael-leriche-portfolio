@@ -1,29 +1,6 @@
-// $bodyFont:'Gothic A1';
-// $headerFont: 'Calistoga', cursive;
-// $bodyFont: 'Roboto', sans-serif;
-$headerFont: 'Poppins', sans-serif;
 $bodyFont:'Poppins', sans-serif;
+$headerFont: 'Arimo', sans-serif;
 
-// $secondaryFont: 'Montserrat', sans-serif;
-$colourOne: #1e91d6;
-$colourTwo: #53d769;
-$colourThree: #fecb2e;
-$colourFour: #fd9426;
-$colourFive: #fc3d39;
-$backgroundColour: black;
-
-.line1 {
-    background-color: $colourOne;
-}
-.line2 {
-    background-color: $colourTwo;
-}
-.line3 {
-    background-color: $colourThree;
-}
-.line4 {
-    background-color: $colourFour;
-}
-.line5 {
-    background-color: $colourFive;
-}
+.svg {
+    color: rgba(0,0,0,0.5);
+  }
