@@ -104,7 +104,6 @@ AOS.init({
     }
 });
 
-
 let $mouseX = 0, $mouseY = 0;
 let $xp = 0, $yp =0;
 
@@ -118,9 +117,6 @@ $xp += (($mouseX - $xp)/5);
 $yp += (($mouseY - $yp)/5);
 $("#follow-cursor").css({left:$xp +'px', top:$yp +'px'});  
 }, 30);
-
-
-
 
 let img = $('.point');
 if(img.length > 0){
@@ -155,8 +151,9 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
     }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
+    else {        
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
     }    
 }
 
