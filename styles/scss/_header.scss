@@ -1,7 +1,7 @@
 :root {
     --primary-color: #FF4835;
-  }
-  [data-theme="dark"] {
+}
+[data-theme="dark"] {
     --primary-color: #3ddc97;
 }
 .header-background { 
@@ -68,7 +68,6 @@ h1,
     margin-bottom: 0px;
     animation: fade-slide-up 0.7s 0.5s ease-out forwards;
 }
-
 .social-icons i {
     font-size: 1.7rem;
     margin: 15px;
@@ -109,7 +108,6 @@ h1,
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // width: 100%;
     height: 8vh;
 }
 .long-lat {
@@ -135,7 +133,6 @@ h1,
 }
 .burger:hover {
     background-color: var(--primary-color);
-
 }
 .top-left {
     display: flex;
@@ -204,7 +201,6 @@ nav {
 .scroll-item:hover,
 .scroll-item-active {
     background-color:var(--primary-color);
-
 }
 .scroll-item,
 .scroll-item-active {
@@ -223,7 +219,6 @@ nav {
     width: 1%;
     position: absolute;
 }
-
 .follow-cursor {
     border: 3px solid black;
     height: 40px;
@@ -231,10 +226,7 @@ nav {
     border-radius: 50%;
     position: absolute;
     z-index: -999999999999999;
-    
 }
-
-
 .point {
     width: 5px;
     height: 0;
@@ -246,24 +238,21 @@ nav {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    
     em {
-      margin-left: 10px;
-      font-size: 1rem;
+        margin-left: 10px;
+        font-size: 1rem;
     }
-  }
-  .theme-switch {
+}
+.theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
-  }
-  
-  .theme-switch input {
+}
+.theme-switch input {
     display:none;
-  }
-  
-  .slider {
+}
+.slider {
     background-color: var(--primary-color);
     bottom: 0;
     cursor: pointer;
@@ -272,9 +261,8 @@ nav {
     right: 0;
     top: 0;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+.slider:before {
     background-color: #fff;
     bottom: 4px;
     content: "";
@@ -283,20 +271,16 @@ nav {
     position: absolute;
     transition: .4s;
     width: 26px;
-  }
-
-  input:checked + .slider {
+}
+input:checked + .slider {
     background-color: var(--primary-color);
-  }
-  
-  input:checked + .slider:before {
+}
+input:checked + .slider:before {
     transform: translateX(26px);
-  }
-  
-  .slider.round {
+}
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+.slider.round:before {
     border-radius: 50%;
-  }
+}
