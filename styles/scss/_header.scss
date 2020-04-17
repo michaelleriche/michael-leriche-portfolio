@@ -1,12 +1,14 @@
 :root {
     --primary-color: #00B560;
-    --secondary-color: #b0228c;
-    --background-color: #DFE1D4;
+    // --secondary-color: #b0228c;
+    --secondary-color: #00B560;
+    // --background-color: #DFE1D4;
     --background-color: #fff;
 }
 [data-theme="dark"] {
     --primary-color: #ffd23f;
-    --secondary-color: #3bceac;
+    // --secondary-color: #3bceac;
+    --secondary-color: #ffd23f;
     --background-color: #fff;
 }
 .header-background { 
@@ -227,6 +229,14 @@ nav {
     position: absolute;
 }
 .follow-cursor {
+    border: 3px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999999999999999;
+}
+.follow-cursor2 {
     border: 3px solid black;
     height: 40px;
     width: 40px;

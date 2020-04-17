@@ -113,7 +113,7 @@ $(document).mousemove(function(e){
 let $loop = setInterval(function(){
 $xp += (($mouseX - $xp)/5);
 $yp += (($mouseY - $yp)/5);
-$("#follow-cursor").css({left:$xp +'px', top:$yp +'px'});  
+$("#follow-cursor").css({left:$xp +'px', top:$yp +'px'});
 }, 30);
 
 let img = $('.point');
